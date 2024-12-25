@@ -8,10 +8,9 @@
     "build": "npm run clean && next build",
     "start": "next start",
     "lint": "next lint",
-    "build:worker": "cloudflare",
-    "dev:worker": "wrangler dev --port 8771",
-    "preview:worker": "npm run build:worker && npm run dev:worker",
-    "deploy:worker": "npm run build:worker && wrangler deploy"
+    "_pages:build": "npx @cloudflare/next-on-pages --skip-vercel-cli",
+    "_preview": "npm run pages:build && wrangler pages dev",
+    "_deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "next": "^13.0.0",
@@ -27,6 +26,6 @@
     "@opennextjs/cloudflare": "^0.3.2"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": "^20.0.0"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "heroes-of-history-wiki",
+  "name": "heroes-of-history-wiki-2",
   "private": true,
   "scripts": {
     "build": "turbo build",
