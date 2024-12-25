@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@cloudflare/next-on-pages':
+        specifier: ^1.13.7
+        version: 1.13.7(vercel@39.2.2)(wrangler@3.99.0)
       prettier:
         specifier: ^3.2.5
         version: 3.3.3
