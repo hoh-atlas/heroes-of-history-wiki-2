@@ -16,7 +16,7 @@ const HomePage = (props) => {
         <span>
             <a href={`/${basePath}`} className="text-link-white">Heroes of History Wiki</a> &gt; {selectedTab.name}
         </span>
-    ) : "Heroes of History Wiki";
+    ) : "Heroes of History Wikii";
 
     const renderSelectedTab = () => {
         switch (selectedTab.url) {
